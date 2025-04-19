@@ -19,7 +19,11 @@ def main():
     print()
     print("Type 'help' for a list of commands.")
     print()
-    
+    print("I do not own the rights to The Hobbit or any of its characters.")
+    print("This is a fan-made game and I do not make any profit from it.")
+    print()
+    print("Press Enter to start your journey...")
+    input()
     # Create and start the game
     game = GameEngine()
     game.start()

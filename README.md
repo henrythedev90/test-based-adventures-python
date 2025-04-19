@@ -39,7 +39,7 @@ You play as Bilbo Baggins, a hobbit unexpectedly swept into an adventure with a 
 | `look`               | Look around the current location     |
 | `map` (or `m`)       | Display a map of explored areas      |
 | `inventory` (or `i`) | Check your inventory                 |
-| `help`               | Display available commands           |
+| `help`               | Display available commands & _hints_ |
 | `quit`               | Exit the game                        |
 
 ### Character Interaction Commands
@@ -60,6 +60,17 @@ You play as Bilbo Baggins, a hobbit unexpectedly swept into an adventure with a 
 ### Interactive Storytelling
 
 Experience the story of The Hobbit through descriptive text and character interactions. The game follows the journey from Bag End to the Lonely Mountain, with locations and characters faithful to Tolkien's world.
+
+### Hint System
+
+Throughout your adventure, the game provides contextual hints to guide you. When a hint is available in your current location, you'll see a notification. Simply type `help` to view the hint. Hints are available in key locations to:
+
+- Guide you toward the next story beat
+- Provide suggestions for interacting with characters
+- Offer tactical advice for challenging situations
+- Remind you of important game mechanics
+
+The hint system is designed to be unobtrusive - it's there when you need guidance, but doesn't spoil the experience of discovery.
 
 ### Character Interactions
 
@@ -135,7 +146,9 @@ hobbit_adventure/
 ├── main.py             # Entry point for the game
 ├── game/
 │   ├── __init__.py
-│   └── game_engine.py  # Main game loop and logic
+│   ├── game_engine.py  # Main game loop and logic
+│   ├── map_display.py  # Map rendering functionality
+│   └── character_interactions.py # Character dialog systems
 ├── entities/
 │   ├── __init__.py
 │   ├── player.py       # Player character class
@@ -145,8 +158,11 @@ hobbit_adventure/
 │   └── items.py        # Item classes including the Ring
 └── world/
     ├── __init__.py
-    ├── room.py         # Room class
-    └── dungeon.py      # Middle-earth generation
+    ├── room.py         # Room class with hint system
+    ├── bag_end.py      # Bag End generation
+    ├── locations.py    # Middle-earth locations
+    ├── character_setup.py # Character placement
+    └── middle_earth.py # World generation and management
 ```
 
 ## Future Enhancements

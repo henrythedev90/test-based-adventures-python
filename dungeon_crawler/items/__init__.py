@@ -1,1 +1,0 @@
-# This file makes the items directory a Python package 
