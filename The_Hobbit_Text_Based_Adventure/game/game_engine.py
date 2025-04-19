@@ -19,21 +19,6 @@ class GameEngine:
         self.thorin_has_arrived = False
         
     def display_introduction(self):
-        """Display the introduction to the game"""
-        print("\n" + "=" * 60)
-        print("               THE HOBBIT: AN UNEXPECTED JOURNEY")
-        print("=" * 60)
-        print("\nIn a hole in the ground there lived a hobbit. Not a nasty, dirty, wet")
-        print("hole, filled with the ends of worms and an oozy smell, nor yet a dry,")
-        print("bare, sandy hole with nothing in it to sit down on or to eat: it was")
-        print("a hobbit-hole, and that means comfort.")
-        print("\nYou are Bilbo Baggins, a respectable hobbit of Bag End. You enjoy a")
-        print("comfortable, peaceful life with no adventures or unexpected visitors...")
-        print("at least until today.")
-        print("\nAs you begin your day, little do you know that your life is about to")
-        print("change forever. A wizard named Gandalf and a company of dwarves are")
-        print("about to embark on a quest, and they need a burglar...")
-        
         # Wait for player to press Enter to continue
         input("\nPress Enter to begin your adventure...")
         
